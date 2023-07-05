@@ -22,13 +22,13 @@ a{
 
 }
 
-h1,h2{
+h1, h2{
     font-weight:300;
     line-height: 1.2;
 }
 
 p{
-    margin: 0px 0;
+    margin: 10px 0;
 }
 
 img{
@@ -70,6 +70,10 @@ img{
     display: flex;
  }
 
+ .navbar .logo{
+    font-weight: 400;
+ }
+
  /* Header */
  .hero{
     background: url('../images/home/showcase.jpg') no-repeat center center/cover;
@@ -80,14 +84,16 @@ img{
 
  .hero .content{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    text-align: center;
     height: 100%;
+    padding: 0 20px;
  }
 
 .hero .content h1{
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .hero .content p{
@@ -119,7 +125,7 @@ img{
 
 /* Icons */
 .icons{
-    padding: 60px 0px;
+    padding: 30px;
 }
 .icons h3{
     font-weight: bold;
@@ -146,7 +152,7 @@ img{
 /*Callback form */
 .callback-form{
     width: 100%;
-    margin-bottom: 20px 0;
+    padding: 20px 0;
 }
 .callback-form label{
     display: block;
@@ -207,7 +213,7 @@ img{
 }
 
 .footer a{
-    color: #ffff;
+    color: #fff;
 }
 
 
@@ -236,8 +242,13 @@ img{
     .flex-items{
         flex-direction: column;
     }
-    .flex-columns .row .column, .flex-grid .row .column{
+    .flex-columns .column, .flex-grid .column{
         flex:100%;
         max-width: 100%;
     }
+    .team img{
+        width: 70%;
+    }
+
+    
 }
